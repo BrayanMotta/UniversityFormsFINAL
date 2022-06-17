@@ -77,7 +77,7 @@ namespace University.App.ViewModels.Forms
 
         public ClienteDetailViewModel()
         {
-            
+            this.OnItemClickCommand = new Command(OnItemClick);
         }
 
 
@@ -106,14 +106,15 @@ namespace University.App.ViewModels.Forms
 
         async void NuevoVehiculo()
         {
-            //TODO: Cambiar a RegisterCommmand
+            
             await Application.Current.MainPage.Navigation.PushAsync(new NuevoVehiculoPage());
+            
         }
 
         async void OnItemClick()
         {
             await Application.Current.MainPage.DisplayAlert("Notify", $"Registered Vehicle", "Cancel");
-
+            
         }
 
         public Command RefreshCommand { get; set; }

@@ -18,7 +18,7 @@
             <Entry Placeholder="Placa"  Text="{Binding Placa}" />
             <Entry Placeholder="Marca"  Text="{Binding Marca}" />
             <Entry Placeholder="Color"  Text="{Binding Color}" />
-            <Entry Placeholder="Modelo" Text="{Binding Modelo}" />
+            <Entry Keyboard="Numeric" Placeholder="Modelo" Text="{Binding Modelo}" />
 
             <Button Text="Register" TextColor="White" BackgroundColor="Black" Command="{Binding OnItemClickCommand}" />
 
